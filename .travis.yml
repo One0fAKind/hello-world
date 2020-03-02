@@ -5,4 +5,5 @@ python:
 install:
 - pip install codecov
 script: 
+- python -m unittest discover -v ./
 - coverage run ./test.py
