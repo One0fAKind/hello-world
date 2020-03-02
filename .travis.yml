@@ -7,3 +7,5 @@ install:
 script: 
 - python -m unittest discover -v ./
 - coverage run ./test.py
+
+after_success: bash <(curl -s https://codecov.io/bash)
